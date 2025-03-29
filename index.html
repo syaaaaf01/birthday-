@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise untuk Sayang ❤️</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #2e7d32;
+            color: #ffffff;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+            max-width: 500px;
+            color: #2e7d32;
+        }
+        button {
+            background-color: #1b5e20;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: #66bb6a;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sayang, ada sesuatu untuk awak ❤️</h1>
+        <p>Pilih salah satu butang di bawah...</p>
+        
+        <button onclick="wrongChoice()">Tekan Sini</button>
+        <button onclick="wrongChoice()">Atau Sini?</button>
+        <button onclick="wrongChoice()">Mungkin Sini?</button>
+        <button onclick="rightChoice()">Okay, Ini Betul! 😘</button>
+    </div>
+
+    <script>
+        function wrongChoice() {
+            alert("Eh bukan yang ni, cuba lagi! 😆");
+        }
+        function rightChoice() {
+            window.location.href = "birthday_message.html";
+        }
+    </script>
+</body>
+</html>
